@@ -18,7 +18,7 @@ function App() {
               srcSet="/src/assets/image-product-mobile.jpg"
               media="(max-width: 767px)"
             />
-            <img src="/src/assets/image-product-destop.jpg" alt="image" />
+            <img src="/src/assets/image-product-desktop.jpg" alt="image" />
           </picture>
         </div>
 
