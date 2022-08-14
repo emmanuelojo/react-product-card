@@ -1,6 +1,8 @@
 import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import ProductImage1 from "./assets/image-product-desktop.jpg";
+import ProductImage2 from "./assets/image-product-mobile.jpg";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -10,15 +12,9 @@ function App() {
       <div className="productCard">
         <div className="imgHolder">
           <picture>
-            <source
-              srcSet="/src/assets/image-product-desktop.jpg"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcSet="/src/assets/image-product-mobile.jpg"
-              media="(max-width: 767px)"
-            />
-            <img src="/src/assets/image-product-desktop.jpg" alt="image" />
+            <source srcSet={ProductImage1} media="(min-width: 768px)" />
+            <source srcSet={ProductImage2} media="(max-width: 767px)" />
+            <img src={ProductImage1} alt="image" />
           </picture>
         </div>
 
